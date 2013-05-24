@@ -1,0 +1,162 @@
+@import "vendor/normalize"
+@import "vendor/bourbon/bourbon"
+
+// colors
+$black: #2a2c31
+$dark-gray: #5a5c57
+$white: #eee8da
+$rust: #5a2e2e
+
+// fonts
+=custom-serif($weight: regular, $style: normal)
+  font-family: "pt-serif", Georgia, serif
+  @if $weight == bold
+    font-weight: 700
+  @else
+    font-weight: 400
+  font-style: $style
+
+=custom-sans
+  font-family: "alternate-gothic-no-2-d", Helvetica, sans-serif
+
+html
+  background: $white
+
+body
+  +custom-serif
+
+#container
+  margin: 0 auto
+
+@media screen and (min-width: 600px)
+  #container
+    width: 680px
+
+#header
+  margin: 4em 0 4em
+  //background: transparent url(/images/logo.png) no-repeat center top
+  padding-top: 3em
+  text-align: center
+
+  h1
+    font-size: 4em
+    margin: 0
+    position: relative
+    color: $black
+    +custom-sans
+    text-transform: uppercase
+    //font-family: "abril-fatface", Georgia, serif
+
+    &:after
+      content: "."
+      text-indent: -999em
+      display: block
+      margin: 0.15em auto 0
+      width: 100px
+      height: 1px
+      border-bottom: 3px solid $dark-gray
+
+    span.silent
+      display: block
+      line-height: 1em
+      font-size: 0.45em
+      text-transform: none
+      +custom-serif(regular, italic)
+
+  p.meta
+    font-style: italic
+
+a
+  text-decoration: none
+
+.button
+  background: $rust
+  text-align: center
+  border-radius: 3px
+  +custom-serif(bold)
+  color: $white
+  width: 50%
+  padding: 0.5em 0
+  display: block
+  margin: 0 auto
+  border: none
+  text-transform: uppercase
+
+a, a:visited
+  color: $rust
+  text-decoration: none
+  border-bottom: 1px dotted $rust
+
+a:hover, a:active
+  border: none
+
+article
+  hyphens: auto
+  text-align: justify
+  -webkit-hyphens: auto
+  -moz-hyphens: auto
+
+  section
+    text-align: center
+    clear: both
+    line-height: 1.5em
+    padding: 2em 0
+
+    &.intro
+      margin: 0 0 2em
+      font-size: 1.25em
+      line-height: 1.5em
+
+    .column
+      width: 50%
+      float: left
+
+    .wrapper
+      margin: 0 20px
+
+    hr
+      background: $dark-gray
+      border-width: 0
+      height: 3px
+      line-height: 0
+      margin: 2em auto
+      text-align: center
+      width: 100px
+
+
+    p
+      //text-indent: 1em
+
+    blockquote
+      margin: 1em 0
+      padding: 1em 2em
+      text-align: left
+      font-size: 0.85em
+
+      p
+        margin: 0
+        text-indent: 0em
+
+  h2, h3, h4, h5, h5
+    +custom-sans
+    text-align: center
+    font-size: 2em
+
+  dl
+    dt, dd
+      margin: 0 0 0.5em 0
+
+    dt
+      clear: both
+      float: left
+      width: percentage(1/3)
+      font-weight: bold
+
+    dd
+      float: right
+      width: percentage(2/3)
+      text-align: left
+
+    code
+      display: block
+      line-height: 2em
