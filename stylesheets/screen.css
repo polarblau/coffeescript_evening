@@ -345,9 +345,11 @@ body {
   #container {
     width: 680px; } }
 #header {
-  margin: 4em 0 4em;
+  margin: 1em 0 4em;
   padding-top: 3em;
   text-align: center; }
+  #header img {
+    margin: 0 0 3em 0; }
   #header h1 {
     font-size: 4em;
     margin: 0;
