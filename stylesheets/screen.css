@@ -421,6 +421,10 @@ article {
       margin: 0 0 2em;
       font-size: 1.25em;
       line-height: 1.5em; }
+    article section.block {
+      padding: 2em 15% 0; }
+      article section.block p {
+        text-align: justify; }
     article section .column {
       width: 50%;
       float: left; }
