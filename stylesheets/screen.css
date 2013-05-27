@@ -345,7 +345,7 @@ body {
   #container {
     width: 680px; } }
 #header {
-  margin: 1em 0 4em;
+  margin: 1em 0 2em;
   padding-top: 3em;
   text-align: center; }
   #header img {
@@ -387,12 +387,17 @@ a {
   font-weight: 700;
   font-style: normal;
   color: #eee8da;
-  width: 50%;
+  width: 200px;
   padding: 0.5em 0;
   display: block;
   margin: 0 auto;
   border: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s; }
+  .button:hover {
+    background: #2a2c31; }
 
 a, a:visited {
   color: #5a2e2e;
@@ -411,7 +416,7 @@ article {
     text-align: center;
     clear: both;
     line-height: 1.5em;
-    padding: 2em 0; }
+    padding: 1em 0; }
     article section.intro {
       margin: 0 0 2em;
       font-size: 1.25em;

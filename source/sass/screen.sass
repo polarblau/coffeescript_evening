@@ -33,7 +33,7 @@ body
     width: 680px
 
 #header
-  margin: 1em 0 4em
+  margin: 1em 0 2em
   //background: transparent url(/images/logo.png) no-repeat center top
   padding-top: 3em
   text-align: center
@@ -78,12 +78,17 @@ a
   border-radius: 3px
   +custom-serif(bold)
   color: $white
-  width: 50%
+  width: 200px
   padding: 0.5em 0
   display: block
   margin: 0 auto
   border: none
   text-transform: uppercase
+  +transition(all, 0.3s)
+
+  &:hover
+    background: $black
+
 
 a, a:visited
   color: $rust
@@ -103,7 +108,7 @@ article
     text-align: center
     clear: both
     line-height: 1.5em
-    padding: 2em 0
+    padding: 1em 0
 
     &.intro
       margin: 0 0 2em
