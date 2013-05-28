@@ -15,116 +15,91 @@
       try{Typekit.load();}catch(e){}
 
   %body
+    -# #grid
     #container
       %header#header
-        %img(src="images/logo.png" width="100" height="100" alt="Logo")
-        %h1
-          %span.silent An evening with
-          CoffeeScript
-        %p.meta
-          July 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
+        .wrapper
+          %h1
+            An evening with
+            CoffeeScript
+            %img(src="images/logo.png" alt="" width="80")
+          %p.meta
+            &mdash; July 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
 
-      %article
-        %section.sign-up
+      %section.intro
+        .wrapper
           %a.button(href="mailto:ilmoittautumiset@siili.fi?subject=An evening with CoffeeScript / Sign-up&body=Count me in! [YOUR CONTACT INFORMATION]")
-            Sign-up
-
-        %section
-          %p
-            %strong
-              Places are limited.
-              %br
-              More information will be available closer to the event!
-          %p
-            Follow us on Twitter for updates:
-            %br
-            %a(href="http://twitter.com/SiiliSolutions") @siili
-            &amp;
-            %a(href="http://twitter.com/polarblau") @polarblau
-
-          %hr
+            Join us
 
           %p
-            %a(href="http://siili.fi") Siili
-            \/
-            %a(href="http://polarblau.com") Polarblau
+            Learn all you never dared to ask about CoffeeScript and why you should
+            really use it in a friendly setting.
 
-
-    -#
-      %article
-        %section.intro
-          %p
-            ONE SENTENCE PITCH
-          %a.button(href="mailto:maria.jokela@siili.fi?subject=An evening with CoffeeScript / Sign-up&body=Count me in! [YOUR CONTACT INFORMATION]")
-            Sign-up
-
-        %section
+      %section.text
+        .wrapper
           %h2
             The course
-          .column
-            .wrapper
-              %p
-                Javascript has become one of the most popular languages on the
-                web but it still suffers to date from poor and hasty design
-                decisions made during it’s infancy.
-              %p
-                CoffeeScript — a fairly new language inspired by Ruby, Python
-                and Haskell — compiles into Javascript, aims to highlight
-                Javascripts good parts while hiding its “dark sides” and
-                to make the whole Javascript experience just that much more enjoyable.
-          .column
-            .wrapper
-              %p
-                This (free) course will teach a basic understanding of the
-                language as well as attempt to clear out some of the misunderstandings
-                that seem to keep people from integrating CoffeeScript into their workflow.
-              %p
-                In the first part, the attendees will learn the fundamental concepts
-                behind CoffeeScript as well as discover some of the existing tools.
-              %p
-                The second part — an interactive workshop — will show CoffeeScript
-                in action. Attendees are invited to try their newly earned skills on
-                a small application and to hopefully discover the ‘power of CoffeeScript’.
+          %p
+            Javascript has become one of the most popular languages on the
+            web but it still suffers to date from poor and hasty design
+            decisions made during it’s infancy.
+          %p
+            CoffeeScript — a fairly new language inspired by Ruby, Python
+            and Haskell — compiles into Javascript, aims to highlight
+            Javascripts good parts while hiding its “dark sides” and
+            to make the whole Javascript experience just that much more enjoyable.
+          %p
+            This (free) course will teach a basic understanding of the
+            language as well as attempt to clear out some of the misunderstandings
+            that seem to keep people from integrating CoffeeScript into their workflow.
+          %p
+            In the first part, the attendees will learn the fundamental concepts
+            behind CoffeeScript as well as discover some of the existing tools.
+          %p
+            The second part — an interactive workshop — will show CoffeeScript
+            in action. Attendees are invited to try their newly earned skills on
+            a small application and to hopefully discover the ‘power of CoffeeScript’.
 
-        %section
-          %dl.wrapper
-            %dt
-              Time and Date
-            %dd
-              12th June 2013, 17:30
-            %dt
-              Location
-            %dd
-              TBA
-            %dt
-              Who is it for?
-            %dd
-              CoffeeScript beginners with working Javascript knowledge
-            %dt
-              Prerequisites
-            %dd
-              For those who want to participate in the practical part of the
-              course, a laptop with a working CoffeeScript
-              installation is required. This is most easily accomplished
-              via
-              %a(href="https://npmjs.org/" title="Visit npmjs.org")
-                npm
-              by running
-              %code
-                npm install -g coffee-script
-              %br
-              For other cases consult the documentation at
-              %a(href="http://coffeescript.org/#installation" title="Read the docs at coffeescript.org")
-                coffeescript.org
-              or
-              %a(href="mailto:florian@polarblau.com" title="Send Florian an email")
-                get in touch with Florian
-              (lecturer).
+      %section
+        %dl.wrapper
+          %dt
+            Time and Date
+          %dd
+            12th June 2013, 17:30
+          %dt
+            Location
+          %dd
+            TBA
+          %dt
+            Who is it for?
+          %dd
+            CoffeeScript beginners with working Javascript knowledge
+          %dt
+            Prerequisites
+          %dd
+            For those who want to participate in the practical part of the
+            course, a laptop with a working CoffeeScript
+            installation is required. This is most easily accomplished
+            via
+            %a(href="https://npmjs.org/" title="Visit npmjs.org")
+              npm
+            by running
+            %code
+              npm install -g coffee-script
+            %br
+            For other cases consult the documentation at
+            %a(href="http://coffeescript.org/#installation" title="Read the docs at coffeescript.org")
+              coffeescript.org
+            or
+            %a(href="mailto:florian@polarblau.com" title="Send Florian an email")
+              get in touch with Florian
+            (coach).
 
-        %section
+      %section.text
+        .wrapper
           %h2
-            The Lecturer
-          %img(src="/images/florian.png" alt="Florian Plank")
+            The Coach
+          -#%img(src="/images/florian.png" alt="Florian Plank")
           %p
             Florian Plank has been working on the web for nearly a decade.
             With a strong background in visual design, most of his work
@@ -144,13 +119,26 @@
           %p
             You can find Florian online under @polarblau where it counts.
 
+      -#
         %section
-          MATERIALS (FOR NOW ONLY INFO ABOUT COMING MATERIALS ...)
+          .wrapper
+            MATERIALS (FOR NOW ONLY INFO ABOUT COMING MATERIALS ...)
 
-        %footer#footer
-          TWITTER / EMAIL CONTACT
+      %footer#footer
+        .wrapper
+          %hr
+          %p
+            Follow us on Twitter for updates:
+            %a(href="http://twitter.com/SiiliSolutions") @siili
+            &amp;
+            %a(href="http://twitter.com/polarblau") @polarblau
 
-          %script(src="/javascripts/vendor/jquery.js")
-          %script(src="/javascripts/vendor/jquery.fittext.js")
-          %script(src="/javascripts/vendor/jquery.lettering.js")
-          %script(src="/javascripts/application.js")
+          %p
+            %a(href="http://siili.fi") Siili
+            \/
+            %a(href="http://polarblau.com") Polarblau
+
+      %script(src="/javascripts/vendor/jquery.js")
+      %script(src="/javascripts/vendor/jquery.fittext.js")
+      %script(src="/javascripts/vendor/jquery.lettering.js")
+      %script(src="/javascripts/application.js")

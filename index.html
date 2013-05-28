@@ -19,44 +19,156 @@
   <body>
     <div id='container'>
       <header id='header'>
-        <img alt='Logo' height='100' src='images/logo.png' width='100'>
-        <h1>
-          <span class='silent'>An evening with</span>
-          CoffeeScript
-        </h1>
-        <p class='meta'>
-          July 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
-        </p>
+        <div class='wrapper'>
+          <h1>
+            An evening with
+            CoffeeScript
+            <img alt='' src='images/logo.png' width='80'>
+          </h1>
+          <p class='meta'>
+            &mdash; July 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
+          </p>
+        </div>
       </header>
-      <article>
-        <section class='sign-up'>
+      <section class='intro'>
+        <div class='wrapper'>
           <a class='button' href='mailto:ilmoittautumiset@siili.fi?subject=An evening with CoffeeScript / Sign-up&amp;body=Count me in! [YOUR CONTACT INFORMATION]'>
-            Sign-up
+            Join us
           </a>
-        </section>
-        <section>
           <p>
-            <strong>
-              Places are limited.
-              <br>
-              More information will be available closer to the event!
-            </strong>
+            Learn all you never dared to ask about CoffeeScript and why you should
+            really use it in a friendly setting.
+          </p>
+        </div>
+      </section>
+      <section class='text'>
+        <div class='wrapper'>
+          <h2>
+            The course
+          </h2>
+          <p>
+            Javascript has become one of the most popular languages on the
+            web but it still suffers to date from poor and hasty design
+            decisions made during it’s infancy.
           </p>
           <p>
-            Follow us on Twitter for updates:
+            CoffeeScript — a fairly new language inspired by Ruby, Python
+            and Haskell — compiles into Javascript, aims to highlight
+            Javascripts good parts while hiding its “dark sides” and
+            to make the whole Javascript experience just that much more enjoyable.
+          </p>
+          <p>
+            This (free) course will teach a basic understanding of the
+            language as well as attempt to clear out some of the misunderstandings
+            that seem to keep people from integrating CoffeeScript into their workflow.
+          </p>
+          <p>
+            In the first part, the attendees will learn the fundamental concepts
+            behind CoffeeScript as well as discover some of the existing tools.
+          </p>
+          <p>
+            The second part — an interactive workshop — will show CoffeeScript
+            in action. Attendees are invited to try their newly earned skills on
+            a small application and to hopefully discover the ‘power of CoffeeScript’.
+          </p>
+        </div>
+      </section>
+      <section>
+        <dl class='wrapper'>
+          <dt>
+            Time and Date
+          </dt>
+          <dd>
+            12th June 2013, 17:30
+          </dd>
+          <dt>
+            Location
+          </dt>
+          <dd>
+            TBA
+          </dd>
+          <dt>
+            Who is it for?
+          </dt>
+          <dd>
+            CoffeeScript beginners with working Javascript knowledge
+          </dd>
+          <dt>
+            Prerequisites
+          </dt>
+          <dd>
+            For those who want to participate in the practical part of the
+            course, a laptop with a working CoffeeScript
+            installation is required. This is most easily accomplished
+            via
+            <a href='https://npmjs.org/' title='Visit npmjs.org'>
+              npm
+            </a>
+            by running
+            <code>npm install -g coffee-script</code>
             <br>
+            For other cases consult the documentation at
+            <a href='http://coffeescript.org/#installation' title='Read the docs at coffeescript.org'>
+              coffeescript.org
+            </a>
+            or
+            <a href='mailto:florian@polarblau.com' title='Send Florian an email'>
+              get in touch with Florian
+            </a>
+            (coach).
+          </dd>
+        </dl>
+      </section>
+      <section class='text'>
+        <div class='wrapper'>
+          <h2>
+            The Coach
+          </h2>
+          <p>
+            Florian Plank has been working on the web for nearly a decade.
+            With a strong background in visual design, most of his work
+            happens on the client side and so Javascript has been his
+            trusty tool along the way.
+          </p>
+          <p>
+            Having discovered Ruby as his go–to language a few years back,
+            Florian has ever since been even more
+            dissatisfied by the shortcomings of Javascript and didn’t think
+            long when CoffeeScript appeared. He never looked back.
+          </p>
+          <p>
+            Florian runs a small software shop called
+            <a href='http://polarblau.com' title='Visit polarblau.com'>
+              Polarblau
+            </a>
+            in Finland and helps companies big and small alike to
+            design and build better software for an open web.
+          </p>
+          <p>
+            You can find Florian online under @polarblau where it counts.
+          </p>
+        </div>
+      </section>
+      <footer id='footer'>
+        <div class='wrapper'>
+          <hr>
+          <p>
+            Follow us on Twitter for updates:
             <a href='http://twitter.com/SiiliSolutions'>@siili</a>
             &amp;
             <a href='http://twitter.com/polarblau'>@polarblau</a>
           </p>
-          <hr>
           <p>
             <a href='http://siili.fi'>Siili</a>
             /
             <a href='http://polarblau.com'>Polarblau</a>
           </p>
-        </section>
-      </article>
+        </div>
+      </footer>
+      <script src='/javascripts/vendor/jquery.js'></script>
+      <script src='/javascripts/vendor/jquery.fittext.js'></script>
+      <script src='/javascripts/vendor/jquery.lettering.js'></script>
+      <script src='/javascripts/application.js'></script>
     </div>
   </body>
 </html>

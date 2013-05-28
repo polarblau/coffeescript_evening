@@ -330,65 +330,98 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html {
-  background: #eee8da; }
-
 body {
-  font-family: "pt-serif", Georgia, serif;
-  font-weight: 400;
+  font-family: "ff-meta-serif-web-pro", Georgia, serif;
+  font-weight: 500;
   font-style: normal; }
 
 #container {
   margin: 0 auto; }
 
 @media screen and (min-width: 600px) {
-  #container {
-    width: 680px; } }
+  #header .wrapper,
+  section .wrapper,
+  footer .wrapper {
+    width: 680px;
+    margin: 0 auto;
+    padding: 4em 0 0; } }
 #header {
-  margin: 1em 0 2em;
-  padding-top: 3em;
-  text-align: center; }
-  #header img {
-    margin: 0 0 3em 0; }
+  text-align: left;
+  background: #2a2c31;
+  color: #eee8da; }
+  #header .wrapper {
+    padding: 4em 0 3em; }
   #header h1 {
-    font-size: 4em;
+    font-family: "abril-fatface", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 6em;
+    line-height: 0.8334em;
+    margin: 0; }
+  #header .meta {
+    font-size: 1.25em;
+    line-height: 1.6em;
+    font-style: italic;
     margin: 0;
-    position: relative;
-    color: #2a2c31;
-    font-family: "alternate-gothic-no-2-d", Helvetica, sans-serif;
-    text-transform: uppercase; }
-    #header h1:after {
-      content: ".";
-      text-indent: -999em;
-      display: block;
-      margin: 0.15em auto 0;
-      width: 100px;
-      height: 1px;
-      border-bottom: 3px solid #5a5c57; }
-    #header h1 span.silent {
-      display: block;
-      line-height: 1em;
-      font-size: 0.45em;
-      text-transform: none;
-      font-family: "pt-serif", Georgia, serif;
-      font-weight: 400;
-      font-style: italic; }
-  #header p.meta {
-    font-style: italic; }
+    margin-left: -1em;
+    margin-top: 0.8em; }
+
+section.intro {
+  background: #eee8da;
+  text-align: left;
+  font-size: 1.25em;
+  font-style: italic;
+  color: #5a5c57;
+  *zoom: 1;
+  font-family: "ff-meta-web-pro", Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+  section.intro:before, section.intro:after {
+    content: " ";
+    display: table; }
+  section.intro:after {
+    clear: both; }
+  section.intro .wrapper {
+    padding: 2.4em 0 1.2em; }
+  section.intro p {
+    margin: 1em 10%;
+    text-align: center;
+    line-height: 1.6em; }
+section.text .wrapper {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 2.5em;
+  -moz-column-gap: 2.5em;
+  column-gap: 2.5em;
+  *zoom: 1; }
+  section.text .wrapper:before, section.text .wrapper:after {
+    content: " ";
+    display: table; }
+  section.text .wrapper:after {
+    clear: both; }
+  section.text .wrapper h2 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all; }
+  section.text .wrapper p {
+    line-height: 1.5em;
+    margin: 0 0 1.5em; }
+    section.text .wrapper p:last-child {
+      margin: 0; }
 
 a {
   text-decoration: none; }
 
 .button {
-  background: #5a2e2e;
+  background: #2a2c31;
   text-align: center;
-  border-radius: 3px;
-  font-family: "pt-serif", Georgia, serif;
+  font-family: "ff-meta-web-pro", Helvetica, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #eee8da;
   width: 200px;
-  padding: 0.5em 0;
+  padding: 0.75em 0;
+  font-size: 0.8em;
   display: block;
   margin: 0 auto;
   border: none;
@@ -397,7 +430,7 @@ a {
   -moz-transition: all, 0.3s;
   transition: all, 0.3s; }
   .button:hover {
-    background: #2a2c31; }
+    background: #5a2e2e; }
 
 a, a:visited {
   color: #5a2e2e;
@@ -412,55 +445,70 @@ article {
   text-align: justify;
   -webkit-hyphens: auto;
   -moz-hyphens: auto; }
-  article section {
-    text-align: center;
-    clear: both;
+
+hr {
+  background: #5a5c57;
+  border-width: 0;
+  height: 3px;
+  line-height: 0;
+  margin: 2em auto;
+  text-align: center;
+  width: 100px; }
+
+h2 {
+  font-family: "abril-fatface", Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em 0;
+  line-height: 1em;
+  font-style: italic; }
+
+dl {
+  *zoom: 1; }
+  dl:before, dl:after {
+    content: " ";
+    display: table; }
+  dl:after {
+    clear: both; }
+  dl dt, dl dd {
+    margin: 0;
+    padding: 1em 0;
     line-height: 1.5em;
-    padding: 1em 0; }
-    article section.intro {
-      margin: 0 0 2em;
-      font-size: 1.25em;
-      line-height: 1.5em; }
-    article section.block {
-      padding: 2em 15% 0; }
-      article section.block p {
-        text-align: justify; }
-    article section .column {
-      width: 50%;
-      float: left; }
-    article section .wrapper {
-      margin: 0 20px; }
-    article section hr {
-      background: #5a5c57;
-      border-width: 0;
-      height: 3px;
-      line-height: 0;
-      margin: 2em auto;
-      text-align: center;
-      width: 100px; }
-    article section blockquote {
-      margin: 1em 0;
-      padding: 1em 2em;
-      text-align: left;
-      font-size: 0.85em; }
-      article section blockquote p {
-        margin: 0;
-        text-indent: 0em; }
-  article h2, article h3, article h4, article h5, article h5 {
-    font-family: "alternate-gothic-no-2-d", Helvetica, sans-serif;
-    text-align: center;
-    font-size: 2em; }
-  article dl dt, article dl dd {
-    margin: 0 0 0.5em 0; }
-  article dl dt {
+    border-top: 1px solid #eee8da;
+    padding: 0.9375em 0 1em 0;
+    font-family: "ff-meta-web-pro", Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+  dl dt {
     clear: both;
     float: left;
-    width: 33.33333%;
+    width: 25%;
     font-weight: bold; }
-  article dl dd {
+  dl dd {
     float: right;
-    width: 66.66667%;
-    text-align: left; }
-  article dl code {
+    width: 75%;
+    text-align: left;
+    color: #5a5c57; }
+  dl code {
     display: block;
     line-height: 2em; }
+
+#footer {
+  text-align: center;
+  margin: 4em 0 0; }
+  #footer .wrapper {
+    padding: 2em 0 3em;
+    background: transparent url(/images/twitter.png) no-repeat center top; }
+
+html {
+  position: relative; }
+
+#grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/grid.png); }
