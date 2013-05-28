@@ -14,26 +14,40 @@
     %script(type="text/javascript")
       try{Typekit.load();}catch(e){}
 
+    -# !GRID
+      :sass
+        html
+          position: relative
+
+        #grid
+          display: none
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          background-image: url(/images/grid.png)
   %body
-    -# #grid
+    -# !GRID
+      #grid
     #container
       %header#header
         .wrapper
           %h1
             An evening with
-            CoffeeScript
-            %img(src="images/logo.png" alt="" width="80")
+            %strong
+              CoffeeScript
+              %img(src="images/logo.png" alt="" width="80")
           %p.meta
-            &mdash; July 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
+            July 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
 
       %section.intro
         .wrapper
           %a.button(href="mailto:ilmoittautumiset@siili.fi?subject=An evening with CoffeeScript / Sign-up&body=Count me in! [YOUR CONTACT INFORMATION]")
             Join us
-
           %p
-            Learn all you never dared to ask about CoffeeScript and why you should
-            really use it in a friendly setting.
+            Learn everything you wanted to know about CoffeeScript and why you should
+            really use it &mdash; all in a friendly setting.
 
       %section.text
         .wrapper
@@ -46,7 +60,7 @@
           %p
             CoffeeScript — a fairly new language inspired by Ruby, Python
             and Haskell — compiles into Javascript, aims to highlight
-            Javascripts good parts while hiding its “dark sides” and
+            Javascript’s good parts while hiding its “dark sides” and
             to make the whole Javascript experience just that much more enjoyable.
           %p
             This (free) course will teach a basic understanding of the
@@ -69,7 +83,9 @@
           %dt
             Location
           %dd
-            TBA
+            %a(href="http://www.blak.fi/" title="Visit blak.fi") Bläk
+            (Members Club)
+            Simonkatu 8, Helsinki
           %dt
             Who is it for?
           %dd
