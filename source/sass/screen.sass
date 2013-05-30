@@ -164,11 +164,31 @@ section
     color: $dark-gray
     +clearfix
     +custom-sans
+    position: relative
 
     .wrapper
       padding: 2.4em 0
 
-    p
+    .full
+      position: absolute
+      left: 50%
+      top: 1.5em
+      z-index: 1000
+
+      p
+        +custom-sans
+        display: inline-block
+        position: relative
+        left: -50%
+        white-space: nowrap
+        text-transform: uppercase
+        color: $white
+        line-height: 2.5em
+        padding: 0 1em
+        background: transparentize($rust, 0.1)
+        +transform(rotate(-10deg))
+
+    p.byline
       display: none
       margin: 1em 5%
       text-align: center
@@ -226,7 +246,7 @@ section
       .wrapper
         padding: 2.4em 0 1.2em
 
-      p
+      p.byline
         display: block
 
   section
