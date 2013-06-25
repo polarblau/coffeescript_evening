@@ -36,6 +36,7 @@ $rust     : #5a2e2e
 body
   +custom-serif
   color: $black
+  padding-top: 40px // eurucamp week bar
 
 a
   text-decoration: none
@@ -124,6 +125,9 @@ article
   &:hover
     background: $rust
 
+  &:visited
+    color: $white
+
 
 // Layout ---------------------------------------------------------------------
 
@@ -133,6 +137,19 @@ article
 
 #container
   margin: 0 auto
+
+
+// eurucamp week bar ----------------------------------------------------------
+
+#eurucamp-week-bar
+  width: 100%
+  height: 45px
+  background: transparent
+  border: none
+  overflow: hidden
+  position: fixed
+  top: 0
+  z-index: 9999
 
 
 // Header ---------------------------------------------------------------------

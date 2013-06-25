@@ -28,25 +28,28 @@
           bottom: 0
           background-image: url(/images/grid.png)
   %body
+    %iframe(id="eurucamp-week-bar" src="//eurucamp-week-bar.herokuapp.com?group=rand_days&color=5a2e2e" scrolling="no")
+
     -# !GRID
       #grid
     #container
       %header#header
         .wrapper
           %h1
-            An evening with
+            Tea &amp;
             %strong
               CoffeeScript
               %img(src="images/logo.png" alt="" width="80")
           %p.meta
-            June 12th, 17:30 &mdash; Bläk, Simonkatu 8, Helsinki
+            August 13th, 15:00 &mdash; Berlin
 
       %section.intro
         .wrapper
-          .full
-            %p
-              Sorry, all places are gone!
-          %a.button(href="mailto:ilmoittautumiset@siili.fi?subject=An evening with CoffeeScript / Sign-up&body=Count me in! [YOUR CONTACT INFORMATION]")
+          -#>
+            .full
+              %p
+                Sorry, all places are gone!
+          %a.button(href="https://tito.io/eurucamp/tea-and-coffeescript" title="Get a ticket on tito")
             Join us
           %p.byline
             Learn everything you wanted to know about CoffeeScript and why you should really use it &mdash; all in a friendly setting.
@@ -71,12 +74,12 @@
           %dt
             Time and Date
           %dd
-            12th June 2013, 17:30
+            13th August 2013, 15:00
           %dt
             Location
           %dd
-            %a(href="http://www.blak.fi/" title="Visit blak.fi") Bläk
-            (Members Club) Simonkatu 8, Helsinki
+            -# %a(href="http://www.blak.fi/" title="Visit blak.fi") Bläk
+            Berlin (TBA)
           %dt
             Who is it for?
           %dd
@@ -125,12 +128,12 @@
           %hr
           %p
             Follow us on Twitter for updates:
-            %a(href="http://twitter.com/SiiliSolutions") @siili
+            %a(href="http://twitter.com/eurucamp") @eurucamp
             &amp;
             %a(href="http://twitter.com/polarblau") @polarblau
 
           %p
-            %a(href="http://siili.fi") Siili
+            %a(href="http://2013.eurucamp.org") Eurucamp
             \/
             %a(href="http://polarblau.com") Polarblau
 
