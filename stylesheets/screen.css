@@ -522,6 +522,14 @@ section.text p {
   #footer .wrapper {
     padding: 2em 0 3em;
     background: transparent url(/images/twitter.png) no-repeat center top; }
+  #footer figure {
+    margin: 2em 0; }
+  #footer figcaption {
+    color: #5a5c57;
+    font-size: 0.75em; }
+  #footer img {
+    width: 100%;
+    height: auto; }
 
 @media screen and (min-width: 28.75em) {
   h1 {
